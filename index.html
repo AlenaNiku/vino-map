@@ -2,10 +2,27 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.11.0/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.11.0/mapbox-gl.css' rel='stylesheet' />
+    <link rel="stylesheet" href="style.css">
+
     <title>Vino Map</title>
 </head>
 <body>
-    
+    <div id='map'></div>
+    <script>
+        mapboxgl.accessToken = 'pk.eyJ1IjoiYWxpbmlrdWwiLCJhIjoiY2tiY28xbHd4MDNyMzJybnR0czZqYW1xbSJ9.z_-zeSM0wGBIMbwTVT9J-A';
+
+        var map = new mapboxgl.Map({
+            container: 'map',
+            style: 'mapbox://styles/alinikul/ckbgqayzy32fk1io1siz59ypg', // stylesheet location
+            center: [-96, 37.8], // starting position [lng, lat]
+            zoom: 3.5 // starting zoom
+        });
+        
+    </script>
 </body>
 </html>
