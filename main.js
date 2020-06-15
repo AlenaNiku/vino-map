@@ -8,6 +8,9 @@ let map = new mapboxgl.Map({
     zoom: 3.5 // starting zoom
 });
 
+// Add zoom and rotation controls to the map.
+map.addControl(new mapboxgl.NavigationControl());
+
 let geojson = {
     type: 'FeatureCollection',
     features: [{
@@ -235,3 +238,4 @@ geojson.features.forEach(marker => {
         .setHTML(`<h3>${marker.properties.title}</h3><p>${marker.properties.description}</p>`))
         .addTo(map);
 });
+
