@@ -3,7 +3,7 @@ mapboxgl.accessToken = 'pk.eyJ1IjoiYWxpbmlrdWwiLCJhIjoiY2tiY28xbHd4MDNyMzJybnR0c
 
 let map = new mapboxgl.Map({
     container: 'map',
-    style: 'mapbox://styles/alinikul/ckbgqayzy32fk1io1siz59ypg', // stylesheet location
+    style: 'mapbox://styles/alinikul/ckbgqayzy32fk1io1siz59ypg', // my custom stylesheet location
     center: [-96, 37.8], // starting position [lng, lat]
     zoom: 3.5 // starting zoom
 });
@@ -221,3 +221,17 @@ let geojson = {
     },]
 };
 
+// add markers to map
+geojson.features.forEach(marker => {
+
+    // create a HTML element for each feature
+    let el = document.createElement('div');
+    el.className = 'marker';
+
+    // make a marker for each feature and add to the map
+    new mapboxgl.Marker(el)
+        .setLngLat(marker.geometry.coordinates)
+        .setPopup(new mapboxgl.Popup({ offset: 25 }) // add popups
+        .setHTML(`<h3>${marker.properties.title}</h3><p>${marker.properties.description}</p>`))
+        .addTo(map);
+});
