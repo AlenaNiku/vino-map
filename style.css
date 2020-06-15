@@ -26,5 +26,12 @@ body {
 
 .mapboxgl-popup-content {
     text-align: center;
-    font-family: 'Open Sans', sans-serif;
+}
+
+h3 {
+    font-family: 'Orbitron', sans-serif;
+}
+
+p {
+    font-family: 'Raleway', sans-serif;
 }
