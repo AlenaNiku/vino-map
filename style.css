@@ -20,7 +20,7 @@ body {
 }
 
 .mapboxgl-popup {
-    max-width: 200px;
+    max-width: 300px;
     background-color: red;
 }
 
@@ -34,4 +34,8 @@ h3 {
 
 p {
     font-family: 'Raleway', sans-serif;
+}
+
+img {
+    width: 200px;
 }
