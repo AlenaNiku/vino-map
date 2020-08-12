@@ -3,9 +3,9 @@
 
 ![vino map gif](https://github.com/AlenaNiku/vino-map/blob/master/vino-giphy.gif)
 
-Vino map is an interactive map of the most beautiful and delicious wineries in America🍷 </br>
+**Vino map** is an interactive map of the most beautiful and delicious wineries in America🍷 </br>
 This app was built for my **first ever hackathon** in under 4 hours and it brought me **3rd place** 🤩</br>
-This Hackathon was organized by **Mintbean** - a software developer talent incubator. Learn more about Mintbean 👉 &nbsp;  https://www.mintbean.io/ </br>
+This Hackathon was organized by **Mintbean** - a software developer talent incubator. Learn more about [Mintbean](https://www.mintbean.io/)</br>
 
 #### Check out my blog post 👉 &nbsp;  <a href="https://medium.com/@alenanikulina0/custom-map-with-mapbox-how-i-built-my-vino-map-bb97a36865fa" target="_blank">Custom Map with Mapbox (How I built Vino Map)</a>
 
